@@ -1,3 +1,5 @@
+@import url(animation.css);
+
 /* 
 reset 
 */
@@ -34,10 +36,16 @@ reset
 
 }
 
-.content {
+.content  {
+    
     margin-left: 200px;
     height: 70vh;
     background-color: #141922;
+    
+}
+
+footer {
+    
 }
 
 
@@ -53,12 +61,12 @@ contenuti
 
 header .navbar {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     padding: 2.5rem 2.5rem;
 }
 
 .navbar-logo img {
-   height: 100%;
+    height: 100%;
 }
 
 .navbar-button a {
@@ -83,7 +91,7 @@ sidebar menu
 
 .menu-top {
     display: flex;
-   
+
 }
 
 .home i {
@@ -104,13 +112,11 @@ sidebar menu bottom
 */
 
 
-.menu-buttom {
-   
-}
+.menu-buttom {}
 
 .playlist {
     color: white;
-    margin-top: .625rem ;
+    margin-top: .625rem;
 }
 
 .menu-playlist i {
@@ -127,3 +133,65 @@ sidebar menu bottom
     margin-top: 10px;
 
 }
+
+/* 
+content
+*/
+
+.horizontal-list {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    justify-content: center;
+    padding: 20px;
+    
+}
+
+.horizontal-list a {
+    color: white;
+    text-decoration: none;
+    padding: 0 1.25rem;
+}
+
+/* 
+horizontal-album 
+*/
+
+.horizontal-album {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
+
+.container-img  {
+position: relative;
+height: 100vh;
+overflow-x: auto;
+
+}
+
+.artist {
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 3.125rem;
+padding: 1.25rem;
+overflow-y: auto;
+}
+
+.horizontal-album {
+display: flex;
+flex-wrap: wrap;
+margin: -0.625rem;
+}
+
+.horizontal-album img {
+flex: 0 0 calc(25% - 1.25rem);
+width: 18.75rem;
+height: 18.75rem;
+margin: .625rem;
+}
+
