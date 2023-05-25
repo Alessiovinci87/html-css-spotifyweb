@@ -13,37 +13,117 @@ reset
 }
 
 
-  
-  .container {
-    max-width: 100vw;
-    
 
-    
-  }
-  
-  .sidebar {
-    position: absolute;
-    width: 250px;
-    height: 85vh;
-    background-color: orange;
-    
-    
-  }
-  
-  .content {
-    margin-left: 250px;
-    height: 85vh;
-    background-color: lightcoral;
 
-    
-    
-  }
-  
-  .footer {
-    
+/* 
+  struttura
+*/
+
+.navbar {
     height: 15vh;
-    background-color: aquamarine;
-    
-  }
-  
-  
+    background-color: black;
+    color: white;
+}
+
+
+.sidebar {
+    position: absolute;
+    width: 200px;
+    height: 70vh;
+    background-color: black;
+
+}
+
+.content {
+    margin-left: 200px;
+    height: 70vh;
+    background-color: #141922;
+}
+
+
+.command {
+    height: 15vh;
+    background-color: #282828;
+
+}
+
+/* 
+contenuti 
+*/
+
+header .navbar {
+    display: flex;
+    justify-content:space-between;
+    padding: 2.5rem 2.5rem;
+}
+
+.navbar-logo img {
+   height: 100%;
+}
+
+.navbar-button a {
+    display: flex;
+    background-color: black;
+    border: .125rem solid white;
+    color: white;
+    text-align: center;
+    padding: .9375rem 1.25rem;
+    text-decoration: none;
+    font-size: 8pt;
+}
+
+/* 
+sidebar menu
+*/
+
+.menu {
+    padding: .625rem;
+    font-size: 7pt;
+}
+
+.menu-top {
+    display: flex;
+   
+}
+
+.home i {
+    font-size: 2em;
+    padding: .625rem 0;
+    color: white;
+}
+
+.home a {
+    padding: .9375rem 0 .625rem .625rem;
+    text-decoration: none;
+    color: white;
+}
+
+
+/* 
+sidebar menu bottom
+*/
+
+
+.menu-buttom {
+   
+}
+
+.playlist {
+    color: white;
+    margin-top: .625rem ;
+}
+
+.menu-playlist i {
+    font-size: 3em;
+}
+
+.menu-playlist {
+    display: flex;
+}
+
+.list-playlist li {
+    color: white;
+    list-style: none;
+    margin-top: 10px;
+
+}
