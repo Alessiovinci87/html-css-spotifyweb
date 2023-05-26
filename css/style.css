@@ -34,6 +34,82 @@ header {
     
 }
 
+
+/* 
+aside
+*/
+
+.container-logo {
+    width: 70%;
+    margin: 1.875rem;
+}
+
+.main-content > aside > section {
+    overflow-y: auto;
+    height: 100%;
+    
+}
+
+.list-container {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    margin-bottom: .3125rem;
+}
+
+.list-container img {
+    margin-right: 10px;
+    width: 20%;
+}
+
+.list-container a {
+    text-decoration: none;
+}
+
+.list-white {
+    color: white;
+}
+
+.list-gray {
+    color: gray;
+}
+
+.title {
+    color: white;
+    margin: 1.875rem ;
+    margin-bottom: .625rem;
+}
+
+
+.crea-playlist {
+    
+    display: flex;
+    align-items: center;
+}
+
+
+.list-container i {
+    color: gray;
+    font-size: 3.125rem;
+    margin-right: .625rem;
+}
+
+.container-nome-playlist {
+    margin: 1.25rem;
+}
+
+.container-nome-playlist li{
+    margin: .625rem;
+    list-style: none;
+}
+
+.container-nome-playlist a {
+    color: gray;
+    text-decoration: none;
+    
+
+}
+
 /* 
 main 
 */
@@ -47,6 +123,7 @@ main
 aside {
     width: 200px;
     background-color: black;
+
 }
 
 main {
@@ -66,9 +143,7 @@ main {
     display: flex;
     list-style: none;
     justify-content: center;
-    flex-wrap: wrap;
-    
-    
+    flex-wrap: wrap;  
 }
 
 .container-main-top > nav ul li {
@@ -141,6 +216,7 @@ footer {
     display: flex;
     justify-content: space-between;
     padding: 20px;
+
 }
 
 .footer-left {
