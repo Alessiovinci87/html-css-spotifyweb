@@ -1,7 +1,5 @@
-@import url(animation.css);
-
 /* 
-reset 
+reset
 */
 
 * {
@@ -14,184 +12,175 @@ reset
     font-family: 'Montserrat', sans-serif;
 }
 
-
-
-
 /* 
-  struttura
+header 
 */
 
-.navbar {
-    height: 15vh;
-    background-color: black;
-    color: white;
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2.5rem;
+    text-align: right;
+    width: calc(100% - 200px);
 }
 
+.button {
+    display: inline;
+    color: white;
+    padding: 10px 1.25rem;
+    border: 2px solid white;
+    
+}
 
-.sidebar {
-    position: absolute;
+/* 
+main 
+*/
+
+.main-content {
+    height: calc(100vh - 100px);
+    display: flex;
+    
+}
+
+aside {
     width: 200px;
-    height: 70vh;
     background-color: black;
-
 }
 
-.content  {
-    
-    margin-left: 200px;
-    height: 70vh;
+main {
+    width: calc(100% - 200px);
     background-color: #141922;
-    
-}
-
-footer {
-    
 }
 
 
-.command {
-    height: 15vh;
-    background-color: #282828;
-
-}
-
-/* 
-contenuti 
-*/
-
-header .navbar {
-    display: flex;
-    justify-content: space-between;
-    padding: 2.5rem 2.5rem;
-}
-
-.navbar-logo img {
+.main-content > main > section {
+    overflow-y: auto;
     height: 100%;
-}
-
-.navbar-button a {
-    display: flex;
-    background-color: black;
-    border: .125rem solid white;
-    color: white;
-    text-align: center;
-    padding: .9375rem 1.25rem;
-    text-decoration: none;
-    font-size: 8pt;
-}
-
-/* 
-sidebar menu
-*/
-
-.menu {
-    padding: .625rem;
-    font-size: 7pt;
-}
-
-.menu-top {
-    display: flex;
-
-}
-
-.home i {
-    font-size: 2em;
-    padding: .625rem 0;
-    color: white;
-}
-
-.home a {
-    padding: .9375rem 0 .625rem .625rem;
-    text-decoration: none;
-    color: white;
-}
-
-
-/* 
-sidebar menu bottom
-*/
-
-
-.menu-buttom {}
-
-.playlist {
-    color: white;
-    margin-top: .625rem;
-}
-
-.menu-playlist i {
-    font-size: 3em;
-}
-
-.menu-playlist {
-    display: flex;
-}
-
-.list-playlist li {
-    color: white;
-    list-style: none;
-    margin-top: 10px;
-
-}
-
-/* 
-content
-*/
-
-.horizontal-list {
-    display: flex;
-    list-style: none;
-    text-decoration: none;
-    justify-content: center;
-    padding: 20px;
+    padding-top: 100px;
     
 }
 
-.horizontal-list a {
-    color: white;
-    text-decoration: none;
-    padding: 0 1.25rem;
+.container-main-top > nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    
 }
 
-/* 
-horizontal-album 
-*/
+.container-main-top > nav ul li {
+    padding: .3125rem .625rem;
+}
 
-.horizontal-album {
+.container-main-top > nav > ul > li a {
+    text-decoration: none;
+    color: gray;
+}
+
+.container-main-center {
+    padding-left: .625rem;
+}
+
+
+
+.container-main-center h2 {
+    color: white;
+    margin: 2.5rem 0 10px 0;
+}
+
+.container-main-center p {
+    color: gray;
+    margin: .625rem 0;
+    
+}
+
+.card-container {
     display: flex;
     flex-wrap: wrap;
+    
+    margin-bottom: 2.5rem;
+}
 
+.row {
+    width: calc(100% / 6 - 1.25rem);
+    margin: 0 .625rem;
+    
+    
+}
+
+.img-song img {
+    width: 100%;
+    margin-bottom: .625rem;
+}
+
+.img-song > h4 {
+    text-align: center;
+    color: white;
+}
+
+.img-song > h5 {
+    text-align: center;
+    color: gray;
+    margin: .625rem 0;
+}
+
+.radius {
+    border-radius: 50%;
+}
+
+/* 
+footer 
+*/
+
+footer {
+    height: 100px;
+    background-color:#282828 ;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.footer-left {
+    display: flex;
+}
+
+.left-text {
+    padding: .625rem;
+    color: white;   
+}
+
+.left-text h6 {
+    color: gray;
 }
 
 
-
-.container-img  {
-position: relative;
-height: 100vh;
-overflow-x: auto;
-
+.awesome-left {
+   color: gray;
+   padding: .625rem;
+   display: flex;
+   align-items: center;
 }
 
-.artist {
-position: absolute;
-top: 0;
-left: 0;
-right: 0;
-bottom: 3.125rem;
-padding: 1.25rem;
-overflow-y: auto;
+.awesome-left i{
+    margin: .625rem;
+} 
+
+.awesome i {
+    
+    margin: .625rem;
 }
 
-.horizontal-album {
-display: flex;
-flex-wrap: wrap;
-margin: -0.625rem;
-}
+.awesome {
+    color: white;
+    padding: .625rem;
+    display: flex;
+    align-items: center;
+ }
 
-.horizontal-album img {
-flex: 0 0 calc(25% - 1.25rem);
-width: 18.75rem;
-height: 18.75rem;
-margin: .625rem;
-}
-
+ hr {
+    color: white;
+    width: 3.125rem;
+ }
