@@ -21,7 +21,7 @@ header {
     top: 0;
     right: 0;
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 2.5rem;
+    padding: 1.5rem;
     text-align: right;
     width: calc(100% - 200px);
 }
@@ -46,11 +46,7 @@ aside
     margin: 1.875rem;
 }
 
-.main-content > aside > section {
 
-    height: 30vh;
-    
-}
 
 .list-container {
     display: flex;
@@ -60,12 +56,12 @@ aside
 }
 
 .list-container img {
-    margin-right: 10px;
-    width: 20%;
+    margin-right: .625rem;
+    width: 15%;
 }
 
 .list-container a {
-    font-size: .9375rem;
+    font-size: .625rem;
     text-decoration: none;
 }
 
@@ -84,7 +80,7 @@ aside
 }
 
 .list-gray-crea h4 {
-    font-size: 15px;
+    font-size: 10px;
     color: gray;
 }
 
@@ -97,7 +93,7 @@ aside
 
 .list-container i {
     color: gray;
-    font-size: 3.125rem;
+    font-size: 2.125rem;
     margin-right: .625rem;
 }
 
@@ -113,16 +109,67 @@ aside
 }
 
 .container-nome-playlist a {
-    font-size: 15px;
+    font-size: 10px;
     color: gray;
     text-decoration: none;
     
 
 }
 
+.aside-bottom {
+    color: white;
+    text-decoration: none;
+    padding-top: .625rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+}
+
+hr {
+    width: 50%;
+    margin-left: 1.875rem ;
+}
+
+.installa {
+    margin-bottom: .625rem;
+    margin-left: 1.875rem ;
+}
+
+.installa a{
+    text-decoration: none;
+    color: gray;
+    font-size: .9375rem;
+}
+
+.installa i{
+    margin-right: .625rem;
+}
+
+.utente {
+    margin-top: .625rem;
+    font-size: 10px;
+    margin-left: 1.875rem ;
+    padding-bottom: .625rem;
+    
+}
+
+.utente a {
+    text-decoration: none;
+    color: white;
+}
+
+.utente i {
+    margin-right: .625rem;
+}
+
 /* 
 main 
 */
+main {
+    height: calc(100vh - 100px);
+}
 
 .main-content {
     height: calc(100vh - 100px);
@@ -133,6 +180,9 @@ main
 aside {
     width: 200px;
     background-color: black;
+    min-height: 25rem;
+    position: relative;
+    
 
 }
 
@@ -149,6 +199,16 @@ main {
     
 }
 
+::-webkit-scrollbar {
+    width: 0.5em;
+  }
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(59, 58, 58);
+}
+
+
+
 .container-main-top > nav ul {
     display: flex;
     list-style: none;
@@ -164,6 +224,7 @@ main {
     font-size: 10px;
     text-decoration: none;
     color: gray;
+   
 }
 
 .container-main-center {
@@ -202,7 +263,14 @@ main {
 .img-song img {
     width: 100%;
     margin-bottom: .625rem;
+    opacity: 1;
+    transition: opacity 0.3s ease;
 }
+
+.img-song img:hover {
+    opacity: 0.3;
+}
+
 
 .img-song > h4 {
     font-size: .625rem;
@@ -221,11 +289,14 @@ main {
     border-radius: 50%;
 }
 
+
+
 /* 
 footer 
 */
 
 footer {
+    position: relative;
     height: 100px;
     background-color:#282828 ;
     display: flex;
@@ -248,6 +319,7 @@ footer {
 
 .left-text > h6 {
     color: gray;
+    margin-top: .625rem;
 }
 
 
@@ -274,16 +346,73 @@ footer {
     align-items: center;
  }
 
- hr {
-    color: white;
-    width: 3.125rem;
- }
+
+
+ .barra-avanzamento {
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    position: relative;
+    display: flex;
+  }
+  
+  .barra-avanzamento::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    background-color: gray;
+  }
+  
+  
+  .circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+  }
+  
+  
+  
 
 /* tablet */
 @media screen and (max-width: 1100px) {
     .row {
         width: calc(100% / 4 - 1.25rem);
         margin: 0 .625rem;   
+    }
+    #small {
+        display:none;
+    }
+    .list-container {
+        display: flex;
+        align-items: center;
+        margin-left: 30px;
+        margin-bottom: .3125rem;
+    }
+    
+    .list-container img {
+        margin-right: .625rem;
+        width: 15%;
+    }
+    
+    .list-container a {
+        font-size: .625rem;
+        text-decoration: none;
+    }
+    
+    .list-white {
+        color: white;
+    }
+    
+    .list-gray {
+        color: gray;
     }
 }
 
@@ -294,6 +423,39 @@ footer {
         width: calc(100% / 2 - 1.25rem);
         margin: 0 .625rem;   
     }
+    #small {
+        display:none;
+    }
+    .list-container {
+        display: flex;
+        align-items: center;
+        margin-left: 30px;
+        margin-bottom: .3125rem;
+    }
+    
+    .list-container img {
+        margin-right: .625rem;
+        width: 15%;
+    }
+    
+    .list-container a {
+        font-size: .625rem;
+        text-decoration: none;
+    }
+    
+    .list-white {
+        color: white;
+    }
+    
+    .list-gray {
+        color: gray;
+    }
+
+    .list-container i {
+        color: gray;
+        font-size: 2.125rem;
+        margin-right: .625rem;
+    }
 }
 
 /* mobile piccolo */
@@ -303,4 +465,129 @@ footer {
         width: calc(100% / 2 - 1.25rem);
         margin: 0 .625rem;   
     }
+    .left-text {
+        font-size: 10px;
+    }
+
+    aside {
+    width: 80px;
+    background-color: black;
+    min-height: 25rem;
+    position: relative;
+    }
+
+    #big {
+        display: none;
+    }
+
+    #small {
+        display: block;
+        width: 70%;
+        margin: 0;
+    }
+
+    #small > img {
+        
+    }
+
+    .container-logo {
+        
+        width: 70%;
+        margin: .875rem;
+        display: flex;
+        justify-content: center;
+    }    
+
+    .list-container {
+        margin-left: 30px;
+        
+        margin-top: 1.875rem;
+    }
+    
+    .list-container img {
+        margin-right: .625rem;
+        width: 40%;
+    }
+    
+    .list-container a {
+        display: none;
+    }
+    
+    .list-white {
+        color: white;
+    }
+    
+    .list-gray {
+        color: gray;
+    }    
+
+    .list-container i {
+        display: none;
+    }
+
+    .title {
+        display: none;
+    }
+    
+    .crea-playlist {
+        display: none;    
+    }
+
+    .container-nome-playlist {
+        display:none;
+    }
+
+    .aside-bottom {
+        color: white;
+        text-decoration: none;
+        padding-top: .625rem;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: black;
+        
+    }
+
+    .installa a{
+        display:none;
+    }
+
+    .installa {
+        margin-left: 1.8125rem;
+    }
+
+    .utente a {
+        display: none;
+        
+    }
+
+    .utente i{
+        font-size: 1.875rem;
+        color: gray;
+            
+    }
+
+    .utente {
+        margin-left: 1.375rem;
+    }
+
+    hr {
+        display: none;
+    }
+
+   
+
+    header {
+        width: calc(100% - 70px)
+    }
+    
+    main {
+        width: 100%;
+    }  
+    .awesome-left i{
+
+        color: gray;
+     
+     }
 }
